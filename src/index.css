@@ -20,8 +20,9 @@
   --fs-xlarge: 3rem;
 
   /* SPACING */
-  --sp-sidebar-left: 6rem;
+  --sp-sidebar-left: 3rem;
   --sp-sidebar: 2rem;
+  --sp-base: 1rem;
 }
 
 body {

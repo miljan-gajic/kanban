@@ -1,0 +1,48 @@
+.sidebarContentContainer {
+  flex-grow: 1;
+
+  .sidebarContent {
+    display: flex;
+    flex-direction: column;
+
+    .sidebarBoards {
+      margin-bottom: 1.5rem;
+      text-align: left;
+      margin-left: var(--sp-sidebar-left);
+      color: var(--clr-text-color);
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+      font-size: var(--fs-small);
+    }
+
+    .sidebarContentAddNewBoard {
+      text-align: left;
+      margin-left: var(--sp-sidebar-left);
+      margin-top: 1rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+
+      & > .icon {
+        rotate: -90deg;
+      }
+
+      & > button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        color: var(--clr-primary-selected);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: var(--fs-base);
+        cursor: pointer;
+
+        &:hover {
+          color: var(--clr-primary-fade2);
+        }
+      }
+    }
+  }
+}

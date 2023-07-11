@@ -1,0 +1,41 @@
+.boardLabelContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-left: var(--sp-sidebar-left);
+  margin-bottom: var(--sp-base);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .icon {
+    rotate: -90deg;
+  }
+
+  .sidebarItemLabel {
+    color: var(--clr-text-color);
+  }
+}
+
+.activeSidebarItem {
+  @extend .boardLabelContainer;
+
+  background-color: var(--clr-primary);
+  padding: var(--sp-base);
+  padding-left: 0;
+  width: 90%;
+  margin-left: 0;
+  border-top-right-radius: 100rem;
+  border-bottom-right-radius: 100rem;
+
+  & > .iconContainer {
+    margin-left: var(--sp-sidebar-left);
+  }
+
+  & > .sidebarItemLabel {
+    color: var(--clr-text-color-white);
+    font-weight: 500;
+  }
+}
