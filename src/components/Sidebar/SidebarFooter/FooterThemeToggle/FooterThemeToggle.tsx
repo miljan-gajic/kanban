@@ -9,12 +9,26 @@ const FooterThemeToggle: Component = () => {
 
   return (
     <div class={Styles.sidebarFooterThemeToggleContainer}>
-      <TbSunFilled size={24} color="var(--clr-text-color)" />
+      <TbSunFilled
+        size={24}
+        color={
+          toggleDarkTheme()
+            ? "var(--clr-text-color)"
+            : "var(--clr-text-color-white)"
+        }
+      />
       <ToggleSwitch
         isToggled={toggleDarkTheme()}
         onToggle={setToggleDarkTheme}
       />
-      <TbMoonFilled size={24} color="var(--clr-text-color)" />
+      <TbMoonFilled
+        size={24}
+        color={
+          toggleDarkTheme()
+            ? "var(--clr-text-color-white)"
+            : "var(--clr-text-color)"
+        }
+      />
     </div>
   );
 };
