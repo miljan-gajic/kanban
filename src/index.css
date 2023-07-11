@@ -11,6 +11,17 @@
   --clr-text-color-white: #fff;
 
   --clr-elements-bg: #2c2c39;
+
+  /* FONTS */
+  --fs-xsmall: 0.5rem;
+  --fs-small: 0.75rem;
+  --fs-base: 1rem;
+  --fs-large: 2rem;
+  --fs-xlarge: 3rem;
+
+  /* SPACING */
+  --sp-sidebar-left: 6rem;
+  --sp-sidebar: 2rem;
 }
 
 body {
@@ -21,9 +32,4 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--clr-background);
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

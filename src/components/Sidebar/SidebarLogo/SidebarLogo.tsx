@@ -5,7 +5,12 @@ import Styles from "./SidebarLogo.module.scss";
 const SidebarLogo: Component = () => {
   return (
     <div class={Styles.logoContainer}>
-      <h2>kanban</h2>
+      <div class={Styles.logoBarsContainer}>
+        <div class={Styles.logoBars1}></div>
+        <div class={Styles.logoBars2}></div>
+        <div class={Styles.logoBars3}></div>
+      </div>
+      <h2 class={Styles.logoTypography}>kanban</h2>
     </div>
   );
 };
