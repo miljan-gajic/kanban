@@ -1,0 +1,285 @@
+[
+  {
+    "board": "Platform Launch",
+    "columns": [
+      {
+        "type": "todo",
+        "tasks": [
+          {
+            "title": "Build UI For Onboarding Flow",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "not done"
+              },
+              {
+                "title": "Subtasks 2",
+                "status": "not done"
+              },
+              {
+                "title": "Subtasks 3",
+                "status": "not done"
+              }
+            ]
+          },
+          {
+            "title": "Build UI for Search",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "not done"
+              }
+            ]
+          },
+          {
+            "title": "Build Settings UI",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "not done"
+              },
+              {
+                "title": "Subtasks 2",
+                "status": "not done"
+              }
+            ]
+          },
+          {
+            "title": "QA and test all major user journeys",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "not done"
+              },
+              {
+                "title": "Subtasks 2",
+                "status": "not done"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "inProgress",
+        "tasks": [
+          {
+            "title": "Design Settings and Search pages",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "done"
+              },
+              {
+                "title": "Subtasks 2",
+                "status": "not done"
+              },
+              {
+                "title": "Subtasks 3",
+                "status": "not done"
+              }
+            ]
+          },
+          {
+            "title": "Add Account management endpoints",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "done"
+              },
+              {
+                "title": "Subtasks 2",
+                "status": "done"
+              },
+              {
+                "title": "Subtasks 3",
+                "status": "not done"
+              }
+            ]
+          },
+          {
+            "title": "Design onboarding flow",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "done"
+              },
+              {
+                "title": "Subtasks 2",
+                "status": "not done"
+              },
+              {
+                "title": "Subtasks 3",
+                "status": "not done"
+              }
+            ]
+          },
+          {
+            "title": "Add Search endpoints",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "done"
+              },
+              {
+                "title": "Subtasks 2",
+                "status": "not done"
+              }
+            ]
+          },
+          {
+            "title": "Add Authentication endpoints",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "done"
+              },
+              {
+                "title": "Subtasks 2",
+                "status": "not done"
+              }
+            ]
+          },
+          {
+            "title": "Research pricing points of various competitors and trial different business models",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "done"
+              },
+              {
+                "title": "Subtasks 2",
+                "status": "not done"
+              },
+              {
+                "title": "Subtasks 3",
+                "status": "not done"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "done",
+        "tasks": [
+          {
+            "title": "Conduct 5 Wireframe tests",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "done"
+              }
+            ]
+          },
+          {
+            "title": "Create Wireframe prototypes",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "done"
+              }
+            ]
+          },
+          {
+            "title": "Review results of usability tests and iterate",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "done"
+              },
+              {
+                "title": "Subtasks 2",
+                "status": "done"
+              },
+              {
+                "title": "Subtasks 3",
+                "status": "done"
+              }
+            ]
+          },
+          {
+            "title": "Create paper prototypes and conduct 10 usability tests with potential customers",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "done"
+              },
+              {
+                "title": "Subtasks 2",
+                "status": "done"
+              }
+            ]
+          },
+          {
+            "title": "Market discovery",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "done"
+              }
+            ]
+          },
+          {
+            "title": "Competitor analysis",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "done"
+              },
+              {
+                "title": "Subtasks 2",
+                "status": "done"
+              }
+            ]
+          },
+          {
+            "title": "Research the market",
+            "subtasks": [
+              {
+                "title": "Subtasks 1",
+                "status": "done"
+              },
+              {
+                "title": "Subtasks 2",
+                "status": "done"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "board": "Marketing Plan",
+    "columns": [
+      {
+        "type": "todo",
+        "tasks": []
+      },
+      {
+        "type": "inProgress",
+        "tasks": []
+      },
+      {
+        "type": "done",
+        "tasks": []
+      }
+    ]
+  },
+  {
+    "board": "Roadmap",
+    "columns": [
+      {
+        "type": "todo",
+        "tasks": []
+      },
+      {
+        "type": "inProgress",
+        "tasks": []
+      },
+      {
+        "type": "done",
+        "tasks": []
+      }
+    ]
+  }
+]

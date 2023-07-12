@@ -35,9 +35,16 @@ type ColumnProps = {
 };
 
 const Column: Component<ColumnProps> = ({ tickets, type }) => {
+  const columnTitle = type
+    .split(/(?=[A-Z])/)
+    .join(" ")
+    .toUpperCase();
+
   return (
     <div class={Styles.columnContainer}>
-      <div class={Styles[type]}>Todo ( {tickets.length} )</div>
+      <div class={Styles[type]}>
+        {columnTitle} ( {tickets.length} )
+      </div>
       <div class={Styles.columnTickets}>
         <For each={tickets}>{(ticket) => <Card title={ticket} />}</For>
       </div>

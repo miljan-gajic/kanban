@@ -12,24 +12,16 @@ import SidebarFooter from "@/components/Sidebar/SidebarFooter/SidebarFooter";
 import SidebarLogo from "@/components/Sidebar/SidebarLogo/SidebarLogo";
 import TopMenuBar from "@/components/TopMenuBar/TopMenuBar";
 
-const tempItems = [
-  {
-    label: "Platform Launch",
-  },
-  {
-    label: "Marketing Plan",
-  },
-  {
-    label: "Roadmap",
-  },
-];
+import boardsAndTasks from "@/assets/data/boardsAndTasks.json";
+
+const boards = boardsAndTasks.map((board) => board.board);
 
 const App: Component = () => {
   return (
     <div class={Styles.App}>
       <Sidebar>
         <SidebarLogo />
-        <SidebarContent boards={tempItems} />
+        <SidebarContent boards={boards} />
         <SidebarFooter>
           <FooterThemeToggle />
           <FooterShowHideAction />
