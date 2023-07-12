@@ -1,9 +1,9 @@
-.todoBoardContainer {
+.columnContainer {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 
-  .todoBoardLabel {
+  .todo {
     padding: var(--sp-sidebar) var(--sp-medium);
     color: var(--clr-text-color);
     text-transform: uppercase;
@@ -22,7 +22,23 @@
     }
   }
 
-  .todoBoardTickets {
+  .inProgress {
+    @extend .todo;
+
+    &::before {
+      background-color: var(--clr-in-progress);
+    }
+  }
+
+  .done {
+    @extend .todo;
+
+    &::before {
+      background-color: var(--clr-done);
+    }
+  }
+
+  .columnTickets {
     width: 100%;
   }
 }

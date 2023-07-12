@@ -1,21 +1,25 @@
 import type { Component } from "solid-js";
 
 import Styles from "./BoardContent.module.scss";
-import TodoBoard from "./TodoBoard/TodoBoard";
+import Column, {
+  tempDoneTickets,
+  tempInProgressTickets,
+  tempToDoTickets,
+} from "./Column/Column";
 
 const BoardContent: Component = () => {
   return (
     <div class={Styles.mainGrid}>
       <div class={`${Styles.mainGridElement} ${Styles.mainGridElementTodo}`}>
-        <TodoBoard />
+        <Column tickets={tempToDoTickets} type="todo" />
       </div>
       <div
         class={`${Styles.mainGridElement} ${Styles.mainGridElementInProgress}`}
       >
-        2
+        <Column tickets={tempInProgressTickets} type="inProgress" />
       </div>
       <div class={`${Styles.mainGridElement} ${Styles.mainGridElementDone}`}>
-        3
+        <Column tickets={tempDoneTickets} type="done" />
       </div>
     </div>
   );
