@@ -1,12 +1,13 @@
 import type { Component } from "solid-js";
 
 import Styles from "./BoardContent.module.scss";
+import TodoBoard from "./TodoBoard/TodoBoard";
 
 const BoardContent: Component = () => {
   return (
     <div class={Styles.mainGrid}>
       <div class={`${Styles.mainGridElement} ${Styles.mainGridElementTodo}`}>
-        1
+        <TodoBoard />
       </div>
       <div
         class={`${Styles.mainGridElement} ${Styles.mainGridElementInProgress}`}

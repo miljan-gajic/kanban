@@ -12,6 +12,10 @@
 
   --clr-elements-bg: #2c2c39;
 
+  --clr-todo: #4dc0e5;
+  --clr-in-progress: var(--clr-primary);
+  --clr-done: #6adfae;
+
   /* FONTS */
   --fs-xsmall: 0.5rem;
   --fs-small: 0.75rem;
@@ -22,7 +26,13 @@
   /* SPACING */
   --sp-sidebar-left: 3rem;
   --sp-sidebar: 2rem;
+
+  --sp-small: 0.5rem;
   --sp-base: 1rem;
+  --sp-medium: 1.5rem;
+
+  /* Typography */
+  --text-letter-spacing: 0.15rem;
 }
 
 body {

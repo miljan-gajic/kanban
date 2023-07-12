@@ -1,0 +1,28 @@
+.todoBoardContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  .todoBoardLabel {
+    padding: var(--sp-sidebar) var(--sp-medium);
+    color: var(--clr-text-color);
+    text-transform: uppercase;
+    letter-spacing: var(--text-letter-spacing);
+    font-size: var(--fs-small);
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      margin-right: var(--sp-base);
+      border-radius: 7.5px;
+      background-color: var(--clr-todo);
+      transform: translateY(2px);
+    }
+  }
+
+  .todoBoardTickets {
+    width: 100%;
+  }
+}

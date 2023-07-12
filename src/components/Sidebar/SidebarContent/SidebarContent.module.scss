@@ -11,7 +11,7 @@
       margin-left: var(--sp-sidebar-left);
       color: var(--clr-text-color);
       text-transform: uppercase;
-      letter-spacing: 0.15rem;
+      letter-spacing: var(--text-letter-spacing);
       font-size: var(--fs-small);
     }
 

@@ -2,9 +2,10 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  gap: var(--sp-base);
 
   .mainGridElement {
-    justify-self: center;
+    justify-self: start;
+    width: 100%;
   }
 }
