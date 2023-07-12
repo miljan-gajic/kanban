@@ -2,6 +2,7 @@ import type { Component } from "solid-js";
 
 import Styles from "./App.module.scss";
 
+import BoardContent from "@/components/BoardContent/BoardContent";
 import Content from "@/components/Content/Content";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import SidebarContent from "@/components/Sidebar/SidebarContent/SidebarContent";
@@ -36,6 +37,7 @@ const App: Component = () => {
       </Sidebar>
       <Content>
         <TopMenuBar />
+        <BoardContent />
       </Content>
     </div>
   );

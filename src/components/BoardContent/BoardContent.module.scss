@@ -1,0 +1,10 @@
+.mainGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+
+  .mainGridElement {
+    justify-self: center;
+  }
+}

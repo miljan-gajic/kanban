@@ -7,6 +7,8 @@ import Styles from "./FooterThemeToggle.module.scss";
 const FooterThemeToggle: Component = () => {
   const [toggleDarkTheme, setToggleDarkTheme] = createSignal(true);
 
+  const toggleTheme = () => setToggleDarkTheme(!toggleDarkTheme());
+
   return (
     <div class={Styles.sidebarFooterThemeToggleContainer}>
       <TbSunFilled
@@ -17,10 +19,7 @@ const FooterThemeToggle: Component = () => {
             : "var(--clr-text-color-white)"
         }
       />
-      <ToggleSwitch
-        isToggled={toggleDarkTheme()}
-        onToggle={setToggleDarkTheme}
-      />
+      <ToggleSwitch isToggled={toggleDarkTheme()} onToggle={toggleTheme} />
       <TbMoonFilled
         size={24}
         color={

@@ -1,10 +1,10 @@
-import type { Component, Setter } from "solid-js";
+import type { Component } from "solid-js";
 
 import Styles from "./ToggleSwitch.module.scss";
 
 type ToggleSwitchProps = {
   isToggled: boolean;
-  onToggle: Setter<boolean>;
+  onToggle: () => boolean;
 };
 const ToggleSwitch: Component<ToggleSwitchProps> = ({
   isToggled,
