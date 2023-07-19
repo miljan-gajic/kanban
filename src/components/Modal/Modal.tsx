@@ -1,12 +1,20 @@
-import type { ParentComponent } from "solid-js";
+import { type ParentComponent } from "solid-js";
+import { Portal } from "solid-js/web";
 
 import Styles from "./Modal.module.scss";
 
-const Modal: ParentComponent = ({ children }) => {
+type ModalProps = {
+  isOpen: boolean;
+  closeHandler?: () => void;
+};
+
+const Modal: ParentComponent<ModalProps> = ({ children, isOpen }) => {
   return (
-    <section role="dialog" class={Styles.modal}>
-      {children}
-    </section>
+    <Portal>
+      <section role="dialog" class={Styles.modal}>
+        {children}
+      </section>
+    </Portal>
   );
 };
 
