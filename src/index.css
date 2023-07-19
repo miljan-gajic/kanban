@@ -20,6 +20,7 @@
   --fs-xsmall: 0.5rem;
   --fs-small: 0.75rem;
   --fs-base: 1rem;
+  --fs-medium: 1.5rem;
   --fs-large: 2rem;
   --fs-xlarge: 3rem;
 
@@ -30,6 +31,8 @@
   --sp-small: 0.5rem;
   --sp-base: 1rem;
   --sp-medium: 1.5rem;
+  --sp-large: 2.5rem;
+  --sp-xlarge: 4rem
 
   /* Typography */
   --text-letter-spacing: 0.15rem;
@@ -43,4 +46,5 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--clr-background);
+  position: relative;
 }

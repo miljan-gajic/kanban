@@ -1,0 +1,25 @@
+.button {
+  all: unset;
+  padding: var(--sp-base);
+  text-align: center;
+  font-size: var(--fs-base);
+  color: var(--clr-text-color-white);
+}
+
+.primary {
+  background-color: var(--clr-primary);
+}
+
+.secondary {
+  background-color: var(--clr-text-color-white);
+  color: var(--clr-primary);
+}
+
+.outlined {
+  background-color: transparent;
+  border: 1px solid var(--clr-primary);
+}
+
+.rounded {
+  border-radius: 500rem;
+}

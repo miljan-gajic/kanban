@@ -1,16 +1,16 @@
 import { type Component } from "solid-js";
-import Styles from "./TextInput.module.scss";
+import Styles from "./TextArea.module.scss";
 
 type TextInputProps = {
   fieldName: string;
   onChangeHandler: (
     evt: Event & {
-      currentTarget: HTMLInputElement;
-      target: HTMLInputElement;
+      currentTarget: HTMLTextAreaElement;
+      target: HTMLTextAreaElement;
     }
   ) => void;
   placeholder?: string;
-  label?: string;
+  label: string;
 };
 
 const TextInput: Component<TextInputProps> = ({
@@ -21,13 +21,13 @@ const TextInput: Component<TextInputProps> = ({
 }) => {
   return (
     <label class={Styles.surroundingLabel}>
-      {label ?? ""}
-      <input
-        class={Styles.textInput}
-        type="text"
+      {label}
+      <textarea
+        class={Styles.textArea}
         onChange={onChangeHandler}
         name={fieldName}
         placeholder={placeholder}
+        rows={7}
       />
     </label>
   );
