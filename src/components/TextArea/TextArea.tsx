@@ -13,7 +13,7 @@ type TextInputProps = {
   label: string;
 };
 
-const TextInput: Component<TextInputProps> = ({
+const TextArea: Component<TextInputProps> = ({
   fieldName,
   onChangeHandler,
   placeholder,
@@ -33,4 +33,4 @@ const TextInput: Component<TextInputProps> = ({
   );
 };
 
-export default TextInput;
+export default TextArea;

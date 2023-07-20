@@ -18,3 +18,24 @@
     color: var(--clr-text-color);
   }
 }
+
+.iconAndInputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--sp-medium);
+
+  .endIcon {
+    cursor: pointer;
+  }
+}
+
+.inputFullWidth {
+  & input {
+    width: calc(100% - 3.2rem);
+  }
+}
+
+.inputWithIcon {
+  flex: 1;
+}

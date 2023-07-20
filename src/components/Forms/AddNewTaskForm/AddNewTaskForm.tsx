@@ -1,4 +1,5 @@
 import Button from "@/components/Button/Button";
+import Dropdown, { SelectedValue } from "@/components/Dropdown/Dropdown";
 import TextArea from "@/components/TextArea/TextArea";
 import TextInput from "@/components/TextInput/TextInput";
 import { For, Show, createSignal } from "solid-js";
@@ -14,17 +15,27 @@ type TextAreaEvent = Event & {
   target: HTMLTextAreaElement;
 };
 
+type Subtask = {
+  name: string;
+  value: string;
+  status: "DONE" | "ACTIVE";
+};
+
+type FormState = {
+  title: string;
+  description: string;
+  subtasks: Subtask[];
+  status: SelectedValue | SelectedValue[] | null;
+};
+
 const AddNewTaskForm = () => {
   const [subtasks, setSubtasks] = createSignal<string[]>([]);
   const [subtasksIncrement, setSubtasksIncrement] = createSignal(1);
-  const [addNewTaskForm, setAddNewTaskForm] = createSignal<{
-    title: string;
-    description: string;
-    subtasks: string[];
-  }>({
+  const [addNewTaskForm, setAddNewTaskForm] = createSignal<FormState>({
     title: "",
     description: "",
     subtasks: [],
+    status: null,
   });
 
   const handleSettingFormValue = (e: InputEvent | TextAreaEvent) => {
@@ -36,19 +47,47 @@ const AddNewTaskForm = () => {
     });
   };
 
-  const addNewSubtaskHandler = (name: string) => {
-    setSubtasks([...subtasks(), name]);
+  const handleSettingSubtaskValue = (e: InputEvent) => {
+    const { name, value } = e.currentTarget;
 
     setAddNewTaskForm({
       ...addNewTaskForm(),
-      subtasks: subtasks(),
+      subtasks: [
+        ...addNewTaskForm()["subtasks"],
+        {
+          name,
+          value,
+          status: "ACTIVE",
+        },
+      ],
+    });
+  };
+
+  const removeSubtaskHandler = (subtaskName: string) => {
+    const filteredOutSubtasks = subtasks().filter((sub) => sub !== subtaskName);
+    const filterOutSubtaskFormValues = addNewTaskForm()["subtasks"].filter(
+      (sub) => sub.name !== subtaskName
+    );
+    setSubtasks(filteredOutSubtasks);
+    setAddNewTaskForm({
+      ...addNewTaskForm(),
+      subtasks: filterOutSubtaskFormValues,
+    });
+  };
+
+  const addNewSubtaskHandler = (name: string) => {
+    setSubtasks([...subtasks(), name]);
+  };
+
+  const addStatusToForm = (newValue: SelectedValue | SelectedValue[]) => {
+    setAddNewTaskForm({
+      ...addNewTaskForm(),
+      status: newValue,
     });
   };
 
   const handleSubmitForm = () => {
     console.log(addNewTaskForm());
-    console.log("SUB", subtasks());
-    console.log("SUB inc", subtasksIncrement());
   };
 
   return (
@@ -60,14 +99,22 @@ const AddNewTaskForm = () => {
         onChangeHandler={handleSettingFormValue}
         label="Title"
       />
+      <TextArea
+        fieldName="description"
+        onChangeHandler={handleSettingFormValue}
+        label="Description"
+        placeholder="e.g. It's always good to take a break. This 15 minute break will recharge the batteries a little..."
+      />
       <Show when={subtasks().length > 0}>
         <p class={Styles.subtasksLabel}>Subtasks</p>
         <For each={subtasks()}>
           {(subtask) => (
             <TextInput
               fieldName={subtask}
-              onChangeHandler={() => addNewSubtaskHandler(subtask)}
+              onChangeHandler={handleSettingSubtaskValue}
               placeholder="Add a subtask..."
+              customHandler={() => removeSubtaskHandler(subtask)}
+              icon
             />
           )}
         </For>
@@ -78,16 +125,21 @@ const AddNewTaskForm = () => {
         type="button"
         onClick={() => {
           addNewSubtaskHandler(
-            `${addNewTaskForm()["title"]}-subtask-${subtasksIncrement()}`
+            `${addNewTaskForm()
+              ["title"].split(" ")
+              .join(" ")}-subtask-${subtasksIncrement()}`
           );
           setSubtasksIncrement(subtasksIncrement() + 1);
         }}
       />
-      <TextArea
-        fieldName="description"
-        onChangeHandler={handleSettingFormValue}
-        label="Description"
-        placeholder="e.g. It's always good to take a break. This 15 minute break will recharge the batteries a little..."
+      <Dropdown
+        placeHolder="Select the status for your task..."
+        options={[
+          { label: "Todo", value: "TODO" },
+          { label: "In Progress", value: "IN_PROGRESS" },
+          { label: "Done", value: "DONE" },
+        ]}
+        onChange={addStatusToForm}
       />
       <Button label="Add New Task" type="button" onClick={handleSubmitForm} />
     </form>
