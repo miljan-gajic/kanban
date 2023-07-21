@@ -1,0 +1,13 @@
+.sidebarSectionContainer {
+  width: 450px;
+  background-color: var(--clr-elements-bg);
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-right: 1px solid var(--clr-text-color);
+
+  &Elements {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+}

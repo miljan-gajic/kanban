@@ -1,0 +1,11 @@
+.mainGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-base);
+
+  .mainGridElement {
+    justify-self: start;
+    width: 100%;
+  }
+}

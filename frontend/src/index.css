@@ -1,0 +1,53 @@
+:root {
+  /* COLORS */
+  --clr-background: #21212e;
+
+  --clr-primary: #655fc6;
+  --clr-primary-fade1: #5351a1;
+  --clr-primary-fade2: #464581;
+  --clr-primary-selected: #605bac;
+
+  --clr-text-color: #7a8394;
+  --clr-text-color-white: #fff;
+
+  --clr-elements-bg: #2c2c39;
+
+  --clr-todo: #4dc0e5;
+  --clr-in-progress: var(--clr-primary);
+  --clr-done: #6adfae;
+
+  /* FONTS */
+  --fs-xsmall: 0.5rem;
+  --fs-small: 0.75rem;
+  --fs-base: 1rem;
+  --fs-medium: 1.5rem;
+  --fs-large: 2rem;
+  --fs-xlarge: 3rem;
+
+  /* SPACING */
+  --sp-sidebar-left: 3rem;
+  --sp-sidebar: 2rem;
+
+  --sp-small: 0.5rem;
+  --sp-base: 1rem;
+  --sp-medium: 1.5rem;
+  --sp-large: 2.5rem;
+  --sp-xlarge: 4rem
+
+  /* Typography */
+  --text-letter-spacing: 0.15rem;
+
+  /* Forms */
+  --form-control-disabled: #959495;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--clr-background);
+  position: relative;
+}

@@ -1,0 +1,20 @@
+.surroundingLabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: var(--fs-small);
+  font-weight: 600;
+}
+
+.textArea {
+  margin-top: 0.75rem;
+  background-color: var(--clr-elements-bg);
+  padding: var(--sp-base) var(--sp-medium);
+  border: 1px solid var(--clr-text-color);
+  border-radius: 0.5rem;
+  color: var(--clr-text-color-white);
+
+  &::placeholder {
+    color: var(--clr-text-color);
+  }
+}

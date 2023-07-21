@@ -1,0 +1,19 @@
+.addNewTaskForm {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--sp-medium);
+
+  &Title {
+    font-size: var(--fs-medium);
+    margin-top: 0;
+  }
+}
+
+.subtasksLabel {
+  color: var(--clr-text-color-white);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  margin-bottom: -1.5rem;
+}
