@@ -36,6 +36,9 @@
 
   /* Typography */
   --text-letter-spacing: 0.15rem;
+
+  /* Forms */
+  --form-control-disabled: #959495;
 }
 
 body {

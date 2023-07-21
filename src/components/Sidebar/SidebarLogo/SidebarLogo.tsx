@@ -10,7 +10,7 @@ const SidebarLogo: Component = () => {
         <div class={Styles.logoBars2}></div>
         <div class={Styles.logoBars3}></div>
       </div>
-      <h2 class={Styles.logoTypography}>kanban</h2>
+      <h2 class={Styles.logoTypography}>taskme</h2>
     </div>
   );
 };

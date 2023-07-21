@@ -2,8 +2,13 @@
   background-color: var(--clr-elements-bg);
   margin-bottom: var(--sp-medium);
   margin-left: var(--sp-medium);
-  padding: var(--sp-medium) var(--sp-base);
+  padding: var(--sp-large) var(--sp-base);
   border-radius: 0.5rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--clr-primary-fade2);
+  }
 
   .cardTitle {
     color: var(--clr-text-color-white);

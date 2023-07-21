@@ -35,6 +35,7 @@ type DropdownProps = {
   options: SelectedValue[];
   isMulti?: boolean;
   isSearchable?: boolean;
+  showLabel?: boolean;
   onChange: (value: SelectedValue | SelectedValue[]) => void;
 };
 
@@ -44,6 +45,7 @@ const Dropdown: Component<DropdownProps> = ({
   isMulti,
   isSearchable,
   onChange,
+  showLabel,
 }) => {
   const [showMenu, setShowMenu] = createSignal(false);
   const [selectedValue, setSelectedValue] = createSignal<SelectedValue | null>(
@@ -52,8 +54,6 @@ const Dropdown: Component<DropdownProps> = ({
   const [selectedValueMulti, setSelectedValueMulti] = createSignal<
     SelectedValue[] | null
   >([]);
-
-  const [displayValue, setDisplayValue] = createSignal(placeHolder);
 
   const [searchValue, setSearchValue] = createSignal("");
 
@@ -190,7 +190,9 @@ const Dropdown: Component<DropdownProps> = ({
 
   return (
     <>
-      <p class={Styles.dropdownLabel}>Status</p>
+      <Show when={showLabel}>
+        <p class={Styles.dropdownLabel}>Status</p>
+      </Show>
       <div class={Styles.dropdownContainer}>
         <div
           ref={inputRef}

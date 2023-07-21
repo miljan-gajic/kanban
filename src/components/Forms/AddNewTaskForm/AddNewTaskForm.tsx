@@ -139,6 +139,7 @@ const AddNewTaskForm = () => {
           { label: "In Progress", value: "IN_PROGRESS" },
           { label: "Done", value: "DONE" },
         ]}
+        showLabel
         onChange={addStatusToForm}
       />
       <Button label="Add New Task" type="button" onClick={handleSubmitForm} />

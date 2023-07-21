@@ -7,55 +7,63 @@
         "tasks": [
           {
             "title": "Build UI For Onboarding Flow",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
-                "status": "not done"
+                "status": "not_done"
               },
               {
                 "title": "Subtasks 2",
-                "status": "not done"
+                "status": "not_done"
               },
               {
                 "title": "Subtasks 3",
-                "status": "not done"
+                "status": "not_done"
               }
-            ]
+            ],
+            "status": "TODO"
           },
           {
             "title": "Build UI for Search",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
-                "status": "not done"
+                "status": "not_done"
               }
-            ]
+            ],
+            "status": "TODO"
           },
           {
             "title": "Build Settings UI",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
-                "status": "not done"
+                "status": "not_done"
               },
               {
                 "title": "Subtasks 2",
-                "status": "not done"
+                "status": "not_done"
               }
-            ]
+            ],
+            "status": "TODO"
           },
           {
             "title": "QA and test all major user journeys",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
-                "status": "not done"
+                "status": "not_done"
               },
               {
                 "title": "Subtasks 2",
-                "status": "not done"
+                "status": "not_done"
               }
-            ]
+            ],
+            "status": "TODO"
           }
         ]
       },
@@ -64,6 +72,7 @@
         "tasks": [
           {
             "title": "Design Settings and Search pages",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
@@ -71,16 +80,18 @@
               },
               {
                 "title": "Subtasks 2",
-                "status": "not done"
+                "status": "not_done"
               },
               {
                 "title": "Subtasks 3",
-                "status": "not done"
+                "status": "not_done"
               }
-            ]
+            ],
+            "status": "IN_PROGRESS"
           },
           {
             "title": "Add Account management endpoints",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
@@ -92,12 +103,14 @@
               },
               {
                 "title": "Subtasks 3",
-                "status": "not done"
+                "status": "not_done"
               }
-            ]
+            ],
+            "status": "IN_PROGRESS"
           },
           {
             "title": "Design onboarding flow",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
@@ -105,16 +118,18 @@
               },
               {
                 "title": "Subtasks 2",
-                "status": "not done"
+                "status": "not_done"
               },
               {
                 "title": "Subtasks 3",
-                "status": "not done"
+                "status": "not_done"
               }
-            ]
+            ],
+            "status": "IN_PROGRESS"
           },
           {
             "title": "Add Search endpoints",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
@@ -122,12 +137,14 @@
               },
               {
                 "title": "Subtasks 2",
-                "status": "not done"
+                "status": "not_done"
               }
-            ]
+            ],
+            "status": "IN_PROGRESS"
           },
           {
             "title": "Add Authentication endpoints",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
@@ -135,12 +152,14 @@
               },
               {
                 "title": "Subtasks 2",
-                "status": "not done"
+                "status": "not_done"
               }
-            ]
+            ],
+            "status": "IN_PROGRESS"
           },
           {
             "title": "Research pricing points of various competitors and trial different business models",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
@@ -148,13 +167,14 @@
               },
               {
                 "title": "Subtasks 2",
-                "status": "not done"
+                "status": "not_done"
               },
               {
                 "title": "Subtasks 3",
-                "status": "not done"
+                "status": "not_done"
               }
-            ]
+            ],
+            "status": "IN_PROGRESS"
           }
         ]
       },
@@ -163,24 +183,29 @@
         "tasks": [
           {
             "title": "Conduct 5 Wireframe tests",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
                 "status": "done"
               }
-            ]
+            ],
+            "status": "DONE"
           },
           {
             "title": "Create Wireframe prototypes",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
                 "status": "done"
               }
-            ]
+            ],
+            "status": "DONE"
           },
           {
             "title": "Review results of usability tests and iterate",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
@@ -194,10 +219,12 @@
                 "title": "Subtasks 3",
                 "status": "done"
               }
-            ]
+            ],
+            "status": "DONE"
           },
           {
             "title": "Create paper prototypes and conduct 10 usability tests with potential customers",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
@@ -207,19 +234,23 @@
                 "title": "Subtasks 2",
                 "status": "done"
               }
-            ]
+            ],
+            "status": "DONE"
           },
           {
             "title": "Market discovery",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
                 "status": "done"
               }
-            ]
+            ],
+            "status": "DONE"
           },
           {
             "title": "Competitor analysis",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
@@ -229,10 +260,12 @@
                 "title": "Subtasks 2",
                 "status": "done"
               }
-            ]
+            ],
+            "status": "DONE"
           },
           {
             "title": "Research the market",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, temporibus quos odit laboriosam adipisci ullam.",
             "subtasks": [
               {
                 "title": "Subtasks 1",
@@ -242,7 +275,8 @@
                 "title": "Subtasks 2",
                 "status": "done"
               }
-            ]
+            ],
+            "status": "DONE"
           }
         ]
       }
