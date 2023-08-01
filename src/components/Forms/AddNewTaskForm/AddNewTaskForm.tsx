@@ -15,17 +15,19 @@ type TextAreaEvent = Event & {
   target: HTMLTextAreaElement;
 };
 
+type Status = "TODO" | "IN_PROGRESS" | "DONE" | string
+
 type Subtask = {
-  name: string;
-  value: string;
-  status: "DONE" | "ACTIVE";
+  title: string;
+  description: string;
+  status: Status
 };
 
 type FormState = {
   title: string;
   description: string;
   subtasks: Subtask[];
-  status: SelectedValue | SelectedValue[] | null;
+  status: Status;
 };
 
 const AddNewTaskForm = () => {
@@ -35,7 +37,7 @@ const AddNewTaskForm = () => {
     title: "",
     description: "",
     subtasks: [],
-    status: null,
+    status: "TODO",
   });
 
   const handleSettingFormValue = (e: InputEvent | TextAreaEvent) => {
@@ -50,23 +52,26 @@ const AddNewTaskForm = () => {
   const handleSettingSubtaskValue = (e: InputEvent) => {
     const { name, value } = e.currentTarget;
 
-    setAddNewTaskForm({
-      ...addNewTaskForm(),
-      subtasks: [
-        ...addNewTaskForm()["subtasks"],
-        {
-          name,
-          value,
-          status: "ACTIVE",
-        },
-      ],
-    });
+    if(name || value){
+      setAddNewTaskForm({
+        ...addNewTaskForm(),
+        subtasks: [
+          ...addNewTaskForm()["subtasks"],
+          {
+            title: name,
+            description: value,
+            status: "IN_PROGRESS",
+          },
+        ],
+      });
+    }
+
   };
 
   const removeSubtaskHandler = (subtaskName: string) => {
     const filteredOutSubtasks = subtasks().filter((sub) => sub !== subtaskName);
     const filterOutSubtaskFormValues = addNewTaskForm()["subtasks"].filter(
-      (sub) => sub.name !== subtaskName
+      (sub) => sub.title !== subtaskName
     );
     setSubtasks(filteredOutSubtasks);
     setAddNewTaskForm({
@@ -80,10 +85,13 @@ const AddNewTaskForm = () => {
   };
 
   const addStatusToForm = (newValue: SelectedValue | SelectedValue[]) => {
-    setAddNewTaskForm({
-      ...addNewTaskForm(),
-      status: newValue,
-    });
+    if(!Array.isArray(newValue)){
+      const { value: taskStatus} = newValue || {}
+      setAddNewTaskForm({
+        ...addNewTaskForm(),
+        status: taskStatus,
+      });
+    }
   };
 
   const handleSubmitForm = () => {
