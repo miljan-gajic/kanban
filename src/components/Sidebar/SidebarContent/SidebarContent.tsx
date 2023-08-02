@@ -2,6 +2,7 @@ import { TbLayoutKanban, TbPlus } from "solid-icons/tb";
 import type { Component } from "solid-js";
 import { For, createSignal } from "solid-js";
 
+import boardsAndTasks from "@/assets/data/boardsAndTasks.json";
 import SidebarContentItem from "@/components/Sidebar/SidebarContent/SidebarContentItem/SidebarContentItem";
 import Styles from "./SidebarContent.module.scss";
 
@@ -9,7 +10,8 @@ type SidebarContentProps = {
   boards: string[];
 };
 
-const SidebarContent: Component<SidebarContentProps> = ({ boards }) => {
+const SidebarContent: Component = () => {
+  const boards = boardsAndTasks.map((board) => board.board);
   const [activeBoard, setActiveBoard] = createSignal("Platform Launch");
 
   return (
