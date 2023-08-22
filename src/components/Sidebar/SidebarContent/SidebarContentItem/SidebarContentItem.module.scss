@@ -1,10 +1,12 @@
+@import "@/styles/_variables";
+
 .boardLabelContainer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
-  margin-left: var(--sp-sidebar-left);
-  margin-bottom: var(--sp-base);
+  gap: $sp-base;
+  margin-left: $sp-sidebar-left;
+  margin-bottom: $sp-base;
 
   &:last-child {
     margin-bottom: 0;
@@ -15,15 +17,15 @@
   }
 
   .sidebarItemLabel {
-    color: var(--clr-text-color);
+    color: $clr-text-color;
   }
 }
 
 .activeSidebarItem {
   @extend .boardLabelContainer;
 
-  background-color: var(--clr-primary);
-  padding: var(--sp-base);
+  background-color: $clr-primary;
+  padding: $sp-base;
   padding-left: 0;
   width: 90%;
   margin-left: 0;
@@ -31,11 +33,11 @@
   border-bottom-right-radius: 100rem;
 
   & > .iconContainer {
-    margin-left: var(--sp-sidebar-left);
+    margin-left: $sp-sidebar-left;
   }
 
   & > .sidebarItemLabel {
-    color: var(--clr-text-color-white);
-    font-weight: 500;
+    color: $clr-text-color-white;
+    font-weight: $fw-normal;
   }
 }

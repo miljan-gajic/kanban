@@ -1,9 +1,11 @@
+@import "@/styles/_variables";
+
 .sidebarFooterThemeToggleContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--clr-background);
+  background-color: $clr-background;
   padding: 1.25rem 0;
-  gap: 1.5rem;
+  gap: $sp-medium;
   border-radius: 0.45rem;
 }

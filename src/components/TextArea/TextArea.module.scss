@@ -1,20 +1,22 @@
+@import "@/styles/_variables";
+
 .surroundingLabel {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  font-size: var(--fs-small);
-  font-weight: 600;
+  font-size: $fs-small;
+  font-weight: $fw-semi-bold;
 }
 
 .textArea {
   margin-top: 0.75rem;
-  background-color: var(--clr-elements-bg);
-  padding: var(--sp-base) var(--sp-medium);
-  border: 1px solid var(--clr-text-color);
-  border-radius: 0.5rem;
-  color: var(--clr-text-color-white);
+  background-color: $clr-elements-bg;
+  padding: $sp-base $sp-medium;
+  border: 1px solid $clr-text-color;
+  border-radius: $sp-small;
+  color: $clr-text-color-white;
 
   &::placeholder {
-    color: var(--clr-text-color);
+    color: $clr-text-color;
   }
 }

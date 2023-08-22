@@ -1,3 +1,5 @@
+@import "@/styles/_variables";
+
 .toggleSwitch {
   position: relative;
   display: inline-block;
@@ -11,7 +13,7 @@
   .switch {
     position: absolute;
     cursor: pointer;
-    background-color: var(--clr-text-color);
+    background-color: $clr-text-color;
     border-radius: 25px;
     top: 0;
     right: 0;
@@ -35,10 +37,10 @@
 
   & > input[type="checkbox"]:checked + .switch::before {
     transform: translate(26px, 2px);
-    background-color: var(--clr-text-color-white);
+    background-color: $clr-text-color-white;
   }
 
   & > input[type="checkbox"]:checked + .switch {
-    background-color: var(--clr-primary);
+    background-color: $clr-primary;
   }
 }

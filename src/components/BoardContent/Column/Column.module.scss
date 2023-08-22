@@ -1,23 +1,25 @@
+@import "@/styles/_variables";
+
 .columnContainer {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 
   .todo {
-    padding: var(--sp-sidebar) var(--sp-medium);
-    color: var(--clr-text-color);
+    padding: $sp-sidebar $sp-medium;
+    color: $clr-text-color;
     text-transform: uppercase;
-    letter-spacing: var(--text-letter-spacing);
-    font-size: var(--fs-small);
+    letter-spacing: $text-letter-spacing;
+    font-size: $fs-small;
 
     &::before {
       content: "";
       display: inline-block;
       width: 13px;
       height: 13px;
-      margin-right: var(--sp-base);
+      margin-right: $sp-base;
       border-radius: 7.5px;
-      background-color: var(--clr-todo);
+      background-color: $clr-todo;
       transform: translateY(2px);
     }
   }
@@ -26,7 +28,7 @@
     @extend .todo;
 
     &::before {
-      background-color: var(--clr-in-progress);
+      background-color: $clr-in-progress;
     }
   }
 
@@ -34,7 +36,7 @@
     @extend .todo;
 
     &::before {
-      background-color: var(--clr-done);
+      background-color: $clr-done;
     }
   }
 

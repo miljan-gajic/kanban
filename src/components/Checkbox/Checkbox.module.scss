@@ -1,8 +1,10 @@
+@import "@/styles/_variables";
+
 .formControl {
   font-family: system-ui, sans-serif;
   font-size: 0.9rem;
-  color: var(--clr-text-color);
-  font-weight: 600;
+  color: $clr-text-color;
+  font-weight: $fw-semi-bold;
   line-height: 1.1;
   display: grid;
   grid-template-columns: 1em auto;
@@ -13,7 +15,7 @@
     -webkit-appearance: none;
     appearance: none;
     /* For iOS < 15 to remove gradient background */
-    background-color: var(--clr-text-color);
+    background-color: $clr-text-color;
     /* Not removed via appearance */
     margin: 0;
 
@@ -36,7 +38,7 @@
     height: 0.65em;
     transform: scale(0);
     transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em var(--clr-text-color-white);
+    box-shadow: inset 1em 1em $clr-text-color-white;
 
     /* Windows High Contrast Mode */
     background-color: CanvasText;
@@ -46,7 +48,7 @@
   }
 
   & input[type="checkbox"]:checked {
-    background-color: var(--clr-primary);
+    background-color: $clr-primary;
   }
 
   & input[type="checkbox"]:checked::before {
@@ -59,7 +61,7 @@
   }
 
   & input[type="checkbox"]:disabled {
-    color: var(--form-control-disabled);
+    color: $form-control-disabled;
     cursor: not-allowed;
   }
 }
@@ -69,7 +71,7 @@
 }
 
 .formControlDisabled {
-  color: var(--form-control-disabled);
+  color: $form-control-disabled;
   cursor: not-allowed;
 
   & input[type="checkbox"] {

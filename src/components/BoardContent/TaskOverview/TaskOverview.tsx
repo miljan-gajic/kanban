@@ -14,7 +14,9 @@ type TaskOverviewProps = {
   status: string;
 };
 
-export type TicketStatus = "IN_PROGRESS" | "DONE" | "TODO";
+const statuses = ["IN_PROGRESS", "DONE", "TODO"] as const;
+type StatusesArray = typeof statuses;
+export type TicketStatus = StatusesArray[number];
 
 const TaskOverview: Component<TaskOverviewProps> = ({
   ticketTitle,

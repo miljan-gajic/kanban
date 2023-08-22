@@ -1,10 +1,12 @@
+@import "@/styles/_variables";
+
 .mainGrid {
   width: 95%;
   margin: auto;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--sp-base);
+  gap: $sp-base;
 
   .mainGridElement {
     justify-self: start;

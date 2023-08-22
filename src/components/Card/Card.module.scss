@@ -1,24 +1,26 @@
+@import "@/styles/_variables";
+
 .cardContainer {
-  background-color: var(--clr-elements-bg);
-  margin-bottom: var(--sp-medium);
-  margin-left: var(--sp-medium);
-  padding: var(--sp-large) var(--sp-base);
+  background-color: $clr-elements-bg;
+  margin-bottom: $sp-medium;
+  margin-left: $sp-medium;
+  padding: $sp-large $sp-base;
   border-radius: 0.5rem;
   cursor: pointer;
 
   &:hover {
-    background-color: var(--clr-primary-fade2);
+    background-color: $clr-primary-fade2;
   }
 
   .cardTitle {
-    color: var(--clr-text-color-white);
-    margin-bottom: var(--sp-small);
-    font-weight: 500;
+    color: $clr-text-color-white;
+    margin-bottom: $sp-small;
+    font-weight: $fw-normal;
   }
 
   .cardSubtasks {
-    color: var(--clr-text-color);
-    font-size: var(--fs-small);
-    font-weight: 500;
+    color: $clr-text-color;
+    font-size: $fs-small;
+    font-weight: $fw-normal;
   }
 }

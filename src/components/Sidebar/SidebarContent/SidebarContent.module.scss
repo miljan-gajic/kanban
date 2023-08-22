@@ -1,3 +1,5 @@
+@import "@/styles/_variables";
+
 .sidebarContentContainer {
   flex-grow: 1;
 
@@ -6,23 +8,23 @@
     flex-direction: column;
 
     .sidebarBoards {
-      margin-bottom: 1.5rem;
+      margin-bottom: $sp-medium;
       text-align: left;
-      margin-left: var(--sp-sidebar-left);
-      color: var(--clr-text-color);
+      margin-left: $sp-sidebar-left;
+      color: $clr-text-color;
       text-transform: uppercase;
-      letter-spacing: var(--text-letter-spacing);
-      font-size: var(--fs-small);
+      letter-spacing: $text-letter-spacing;
+      font-size: $fs-small;
     }
 
     .sidebarContentAddNewBoard {
       text-align: left;
-      margin-left: var(--sp-sidebar-left);
-      margin-top: 1rem;
+      margin-left: $sp-sidebar-left;
+      margin-top: $sp-base;
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      gap: 1rem;
+      gap: $sp-base;
 
       & > .icon {
         rotate: -90deg;
@@ -32,15 +34,15 @@
         background-color: transparent;
         border: none;
         padding: 0;
-        color: var(--clr-primary-selected);
+        color: $clr-primary-selected;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        font-size: var(--fs-base);
+        font-size: $fs-base;
         cursor: pointer;
 
         &:hover {
-          color: var(--clr-primary-fade2);
+          color: $clr-primary-fade2;
         }
       }
     }

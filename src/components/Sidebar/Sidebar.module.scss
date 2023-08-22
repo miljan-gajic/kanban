@@ -1,13 +1,15 @@
+@import "@/styles/_variables";
+
 .sidebarSectionContainer {
   width: 450px;
-  background-color: var(--clr-elements-bg);
+  background-color: $clr-elements-bg;
   overflow-x: hidden;
   overflow-y: auto;
-  border-right: 1px solid var(--clr-text-color);
+  border-right: 1px solid $clr-text-color;
 
   &Elements {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: $full-screen-height;
   }
 }

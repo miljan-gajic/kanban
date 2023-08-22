@@ -1,9 +1,11 @@
+@import "@/styles/_variables";
+
 .sidebarFooterContainer {
-  height: 200px;
+  height: $footer-height;
   display: flex;
   justify-content: flex-start;
-  margin-left: var(--sp-sidebar-left);
-  margin-right: var(--sp-sidebar-left);
+  margin-left: $sp-sidebar-left;
+  margin-right: $sp-sidebar-left;
   flex-direction: column;
-  gap: 1rem;
+  gap: $sp-base;
 }

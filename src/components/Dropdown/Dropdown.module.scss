@@ -1,6 +1,8 @@
+@import "@/styles/_variables";
+
 .dropdownContainer {
   text-align: left;
-  border: 1px solid var(--clr-text-color);
+  border: 1px solid $clr-text-color;
   border-radius: 0.5rem;
   position: relative;
 
@@ -20,38 +22,38 @@
 .dropdownMenu {
   position: absolute;
   transform: translateY(4px);
-  width: 100%;
-  border: 1px solid var(--clr-text-color);
+  width: $full-width;
+  border: 1px solid $clr-text-color;
   border-radius: 0.5rem;
   overflow: auto;
   max-height: 150px;
-  background-color: var(--clr-elements-bg);
-  padding: var(--sp-base) 0;
+  background-color: $clr-elements-bg;
+  padding: $sp-base 0;
   z-index: 99;
 }
 
 .dropdownLabel {
-  font-size: var(--fs-small);
-  font-weight: 600;
+  font-size: $fs-small;
+  font-weight: $fw-semi-bold;
   margin: 0 0 -0.75rem 0;
 }
 
 .dropdownSelectedValue {
-  font-size: var(--fs-small);
-  font-weight: 600;
-  color: var(--clr-text-color-white);
-  padding: var(--sp-base) var(--sp-medium);
+  font-size: $fs-small;
+  font-weight: $fw-semi-bold;
+  color: $clr-text-color-white;
+  padding: $sp-base $sp-medium;
 }
 
 .dropdownPlaceholder {
-  color: var(--clr-text-color);
+  color: $clr-text-color;
 }
 
 .dropdownItem {
-  padding-left: var(--sp-medium);
+  padding-left: $sp-medium;
   padding-top: 5px;
   cursor: pointer;
-  color: var(--clr-text-color);
+  color: $clr-text-color;
   text-transform: uppercase;
 
   &:not(:last-of-type) {
@@ -60,11 +62,11 @@
 
   &:hover {
     background-color: #9fc3f870;
-    color: var(--clr-text-color-white);
+    color: $clr-text-color-white;
   }
 
   .selected {
-    background-color: var(--clr-primary);
+    background-color: $clr-primary;
     color: #fff;
   }
 }
@@ -93,7 +95,7 @@
   background-color: #eee;
 
   & input {
-    width: 100%;
+    width: $full-width;
     box-sizing: border-box;
     padding: 5px;
     border: 1px solid #ccc;

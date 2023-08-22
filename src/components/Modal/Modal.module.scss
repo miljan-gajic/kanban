@@ -1,16 +1,16 @@
+@import "@/styles/_variables";
+
 .modal {
   position: absolute;
   inset: 0;
-  z-index: var(--zindex-modal);
 
   &::before {
     content: "";
     position: absolute;
     inset: 0;
-    width: 100vw;
-    height: 100vh;
+    // width: 100vw;
+    min-height: $full-screen-height;
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: var(--zindex-modal-backdrop);
   }
 
   .modalContent {
@@ -19,10 +19,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    max-width: 600px;
-    background-color: var(--clr-elements-bg);
-    color: var(--clr-text-color-white);
-    padding: var(--sp-large);
+    max-width: $modal-content;
+    background-color: $clr-elements-bg;
+    color: $clr-text-color-white;
+    padding: $sp-large;
 
     border-radius: 0.5rem;
 

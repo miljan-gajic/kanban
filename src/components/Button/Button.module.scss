@@ -1,23 +1,25 @@
+@import "@/styles/_variables";
+
 .button {
   all: unset;
-  padding: var(--sp-base);
+  padding: $sp-base;
   text-align: center;
-  font-size: var(--fs-base);
-  color: var(--clr-text-color-white);
+  font-size: $fs-base;
+  color: $clr-text-color-white;
 }
 
 .primary {
-  background-color: var(--clr-primary);
+  background-color: $clr-primary;
 }
 
 .secondary {
-  background-color: var(--clr-text-color-white);
-  color: var(--clr-primary);
+  background-color: $clr-text-color-white;
+  color: $clr-primary;
 }
 
 .outlined {
   background-color: transparent;
-  border: 1px solid var(--clr-primary);
+  border: 1px solid $clr-primary;
 }
 
 .rounded {

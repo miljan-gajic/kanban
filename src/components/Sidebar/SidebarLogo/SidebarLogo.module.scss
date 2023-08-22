@@ -1,6 +1,8 @@
+@import "@/styles/_variables";
+
 .logoContainer {
-  width: 100%;
-  margin: var(--sp-sidebar) 0 var(--sp-sidebar) var(--sp-sidebar-left);
+  width: $full-width;
+  margin: $sp-sidebar 0 $sp-sidebar $sp-sidebar-left;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -15,9 +17,9 @@
 
   .logoTypography {
     display: inline;
-    color: var(--clr-text-color-white);
-    font-size: var(--fs-xlarge);
-    letter-spacing: 0.125rem;
+    color: $clr-text-color-white;
+    font-size: $fs-xlarge;
+    letter-spacing: $sp-sidebar-letter-spacing;
     margin: 0;
     padding: 0;
   }
@@ -28,14 +30,14 @@
   }
   .logoBars1 {
     @extend .logoBars;
-    background-color: var(--clr-primary);
+    background-color: $clr-primary;
   }
   .logoBars2 {
     @extend .logoBars1;
-    background-color: var(--clr-primary-fade1);
+    background-color: $clr-primary-fade1;
   }
   .logoBars3 {
     @extend .logoBars1;
-    background-color: var(--clr-primary-fade2);
+    background-color: $clr-primary-fade2;
   }
 }
